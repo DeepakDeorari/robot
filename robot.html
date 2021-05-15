@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+<style>
+#mycanvas {
+	background-color: lightgrey;
+	width: 24vw;
+	max-width: 400px;
+	height: 60vh;
+	margin: 0 auto;
+	margin-top: 5%;
+	display: block;
+}
+</style>
+
+	</head>
+	<body>
+		<center>
+			<h1>Robot</h1>	
+			<p><b>This is created by Deepak Deorari.</b></p>
+		</center>
+		<canvas id="mycanvas" width="500" height="500" style="border:2px solid #000000;"> Outer box </canvas>
+
+	<script>
+		window.onload = function() {
+			var c = document.getElementById("mycanvas");
+			var context = c.getContext("2d");
+
+			context.beginPath();
+			context.arc(250, 110, 50, 1.2*Math.PI, 1.8*Math.PI, false);
+			context.fillStyle = "#000000";
+			context.fill();    
+			context.beginPath();
+
+			context.rect(200, 89, 100, 72);
+			context.fillStyle = "#0080ff";
+			context.fill(); 
+
+			context.beginPath();
+			context.rect(185, 80, 130, 8);
+			context.fillStyle = "#000000";
+			context.fill();  
+
+			context.beginPath();
+			context.arc(230, 104, 10, 0, 2*Math.PI, false);
+			context.fillStyle = "#000000";
+			context.fill();
+
+			context.beginPath();
+			context.arc(270, 104, 10, 0, 2*Math.PI, false);
+			context.fillStyle = "#000000";
+			context.fill();
+
+			context.beginPath();
+			context.rect(150, 160, 200, 110);
+			context.fillStyle = "#999900";
+			context.fill();
+
+			context.beginPath();
+			context.arc(250, 180, 8, 0, 2*Math.PI, false);
+			context.fillStyle = "#000000";
+			context.fill();
+
+			context.beginPath();
+			context.arc(250, 210, 8, 0, 2*Math.PI, false);
+			context.fillStyle = "#000000";
+			context.fill();
+
+			context.beginPath();
+			context.arc(250, 240, 8, 0, 2*Math.PI, false);
+			context.fillStyle = "#000000";
+			context.fill();
+
+			context.beginPath();
+			context.rect(300, 190, 20, 20);
+			context.fillStyle = "#000000";
+			context.fill();
+
+			context.beginPath();
+			context.rect(90, 170, 60, 30);
+			context.fillStyle = "#999900";
+			context.fill();
+
+			context.beginPath();
+			context.rect(350, 170, 60, 30);
+			context.fillStyle = "#999900";
+			context.fill();
+
+			context.beginPath();
+			context.rect(90, 200, 40, 50);
+			context.fillStyle = "#999900";
+			context.fill();
+
+			context.beginPath();
+			context.arc(110, 233, 30, 0.8*Math.PI, 0.2*Math.PI, true);
+			context.fillStyle = "#0080ff";
+			context.fill();
+
+			context.beginPath();
+			context.rect(370, 130, 40, 50);
+			context.fillStyle = "#999900";
+			context.fill();
+
+			context.beginPath();
+			context.arc(390, 147, 30, 1.2*Math.PI, 1.8*Math.PI, false);
+			context.fillStyle = "#0080ff";
+			context.fill();
+
+			context.beginPath();
+			context.rect(180, 270, 50, 180);
+			context.fillStyle = "grey";
+			context.fill();
+
+			context.beginPath();
+			context.arc(205, 490, 40, 1.2*Math.PI, 1.8*Math.PI, false);
+			context.fillStyle = "#000000";
+			context.fill();
+
+			context.beginPath();
+			context.rect(270, 270, 50, 180);
+			context.fillStyle = "grey";
+			context.fill();
+
+			context.beginPath();
+			context.arc(295, 490, 40, 1.2*Math.PI, 1.8*Math.PI, false);
+			context.fillStyle = "#000000";
+			context.fill();
+
+			context.beginPath();
+			context.arc(250, 100, 40, 0.8*Math.PI, 0.2*Math.PI, true);
+			context.fillStyle = "#000000";
+			context.fill();
+
+			context.stroke();
+
+		};
+	</script>
+
+	</body>
+</html>
